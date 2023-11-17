@@ -1,0 +1,34 @@
+<div class="container">
+
+    <br>
+    <h1>Editar la reserva</h1>
+    <br>
+    <form action="/actualizarReserva/{{data.cedula}}" method="post">
+        <div class="mb-3">
+            <label for="cedula" class="form-label">Buscar</label>
+            <input type="text" class="form-control" value="{{data.cedula}}" id="cedula" readonly="true" name="cedula"
+                placeholder="Cedula">
+        </div>
+        <div class="mb-3">
+            <label for="numInvitados" class="form-label">N° invitados</label>
+            <input type="text" class="form-control" value="{{data.numInvitados}}" id="numInvitados" name="numInvitados"
+                placeholder="N° invitados">
+        </div>
+        <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="text" class="form-control" value="{{data.fecha}}" id="fecha" name="fecha" placeholder="Fecha">
+        </div>
+        <div class="mb-3">
+            <label for="hora" class="form-label">Hora</label>
+            <input type="text" class="form-control" value="{{data.hora}}" id="hora" name="hora" placeholder="Hora">
+        </div>
+        <div class="mb-3">
+            <label for="motivo" class="form-label">Motivo</label>
+            <input type="text" class="form-control" value="{{data.motivo}}" id="motivo" name="motivo"
+                placeholder="Motivo">
+        </div>
+        <div class="mb-3">
+            <input type="submit" class="btn btn-primary form-control" value="Actualizar">
+        </div>
+    </form>
+</div>

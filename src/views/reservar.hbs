@@ -1,0 +1,21 @@
+<div class="unique-container">
+    <img src="image/fondo.jpeg" alt="" class="fondo">
+    <h1 class="text-center">RESERVAS</h1>
+    <form action="/reservar" method="post">
+        <input type="number" id="cedula" name="cedula" required placeholder="CÉDULA" class="estilitos">
+        <input type="number" id="numInvitados" name="numInvitados" required placeholder="N° INVITADOS"
+            class="estilitos">
+        <input type="date" id="fecha" name="fecha" required placeholder="FECHA" class=" estilitos">
+        <input type="text" id="hora" name="hora" required placeholder="HORA" class="estilitos">
+        <input type="text" id="motivo" name="motivo" required placeholder="MOTIVO" class="estilitos">
+        <p class="textohd2">1. La reservación para más de 8 personas tiene un costo adicional</p>
+        <p class="textohd2">2. Si desea cambiar la fecha de la reserva, por favor comunicarse al Whatsapp</p>
+        <button type="submit" class="registro">Reservar</button>
+    </form>
+    {{#if successMessage}}
+    <div class="success-message">{{successMessage}}</div>
+    {{/if}}
+    {{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+    {{/if}}
+</div>

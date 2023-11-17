@@ -1,0 +1,30 @@
+<img src="image/fondo.jpeg" alt="" class="fondo">
+
+<div class="container2">
+    <div class="iniciarsesi">
+        <div class="formulario6">
+            <h1 class="text-center">INICIAR SESION</h1>
+            <section class="form-login formulario4">
+                <form action="/">
+                    <input type="email" name="usuario" value="" placeholder="CORREO ELECTRONICO"
+                        class="borde espaciado">
+                    <input type="password" name="contraseña" value="" placeholder="PASSWORD" class="borde espaciado">
+                    <button type="submit" class="registro" onclick="registrarUsuario()">INGRESAR</button>
+                    <br>
+                    <a style=" color: black; font-size: 20px" href="#">Olvidaste tu usuario? </a>
+                </form>
+            </section>
+        </div>
+        <div class="logo-container2">
+            <img src="image/logo.png" alt="Logo de la empresa" class="logito2">
+        </div>
+    </div>
+</div>
+
+<script>
+    function registrarUsuario() {
+        alert("Se ha registrado con éxito");
+        // Redirigir a la página principal
+        window.location.href = "/";
+    }
+</script>
